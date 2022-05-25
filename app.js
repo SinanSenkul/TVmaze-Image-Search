@@ -30,7 +30,6 @@ const getPage = async () => {
     else {
         document.body.removeChild(document.body.lastChild);
         document.body.appendChild(div);
-        divCount = 1;
     }
 }
 
