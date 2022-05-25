@@ -1,34 +1,3 @@
-/*
-axios
-    .get("https://swapi.dev/api/people/1")
-    .then(res => {
-        console.log("Response: " + res);
-    })
-    .catch(err => {
-        console.log("Error Type: " + err);
-    })
-
-getSWP = async () => {
-    const res = await axios.get("https://swapi.dev/api/people/1");
-    console.log(res.data);
-}
-
-getSWP();
-*/
-
-//295. Setting Headers with Axios
-/* This almighty function will get the joke data from icanhazdadjoke's api, and append each new joke to the body.
-const getDadJoke = async () => {
-    const config = { headers: { Accept: 'application/json' } }
-    const res = await axios.get('https://icanhazdadjoke.com', config);
-    let p = document.createElement('p');
-    p.innerText = res.data.joke;
-    document.body.appendChild(p);
-}
-*/
-
-//TV Show Search App
-
 const getPage = async () => {
     const config = { headers: { Accept: 'application/json' } }
     const res = await axios.get('https://api.tvmaze.com/search/shows?q=' + entry.value, config);
