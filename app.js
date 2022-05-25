@@ -10,6 +10,7 @@ const getPage = async () => {
         hdr.style.color = 'red';
         hdr.style.textAlign = 'center';
         div.appendChild(hdr);
+        divCount = 1;
     }
     for (let i = 0; i < res.data.length; i++) {
         let a = document.createElement('a');
