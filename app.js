@@ -8,6 +8,7 @@ const getPage = async () => {
         hdr.style.color = 'red';
         hdr.style.textAlign = 'center';
         div.appendChild(hdr);
+        document.body.appendChild(div);
         divCount = 1;
     }
     else {
