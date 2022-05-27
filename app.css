@@ -1,12 +1,17 @@
 .header {
     text-align: center;
+    /*background-color: rgb(11, 207, 109);*/
+    color: beige;
+    margin-right: 20px;
+    margin-left: 40px;
 }
 
 #div {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    background-color: rgb(2, 58, 30);
 }
 
 .div {
