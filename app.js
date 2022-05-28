@@ -1,3 +1,8 @@
+var entry = document.querySelector('#entry');
+var submit = document.querySelector('#submit');
+submit.addEventListener('click', getPage);
+var divCount = 0;
+
 const getPage = async () => {
     const config = { headers: { Accept: 'application/json' } }
     const res = await axios.get('https://api.tvmaze.com/search/shows?q=' + entry.value, config);
@@ -42,8 +47,3 @@ const getPage = async () => {
         }
     }
 }
-
-var entry = document.querySelector('#entry');
-var submit = document.querySelector('#submit');
-submit.addEventListener('click', getPage);
-var divCount = 0;
