@@ -1,6 +1,5 @@
 var entry = document.querySelector('#entry');
 var submit = document.querySelector('#submit');
-submit.addEventListener('click', getPage);
 var divCount = 0;
 
 const getPage = async () => {
@@ -22,6 +21,7 @@ const getPage = async () => {
             document.body.appendChild(div);
             divCount = 1;
         }
+        divCount = 1;
     }
     else {
         for (let i = 0; i < res.data.length; i++) {
@@ -47,3 +47,10 @@ const getPage = async () => {
         }
     }
 }
+
+submit.addEventListener('click', getPage);
+entry.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        getPage();
+    }
+});
