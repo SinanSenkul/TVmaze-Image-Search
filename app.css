@@ -11,7 +11,7 @@
     flex-direction: row;
     justify-content: left;
     align-items: center;
-    background-color: rgb(2, 58, 30);
+    background-color: darkolivegreen;
 }
 
 .div {
@@ -25,4 +25,21 @@
     max-width: 100%;
     margin-bottom: 5px;
     margin-right: 5px;
+}
+
+#entry,
+#submit {
+    border-radius: 25px;
+}
+
+#submit:hover {
+    height: 2em;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+#entry:hover {
+    border-radius: 10px;
+    height: 1.5em;
+    transition: 250ms;
 }
