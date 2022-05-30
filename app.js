@@ -21,7 +21,6 @@ const getPage = async () => {
             document.body.appendChild(div);
             divCount = 1;
         }
-        divCount = 1;
     }
     else {
         for (let i = 0; i < res.data.length; i++) {
